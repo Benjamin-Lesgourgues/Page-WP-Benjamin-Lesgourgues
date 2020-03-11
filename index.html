@@ -4,9 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet"> 
+    <title>Benjamin Lesgourgues</title>
+    <link rel="icon" href="Images\BL Rond 2.png">
 </head>
+
+
 <body>
+    <!--Espace Titre-->
+   
+        </head>
+        <body>
     
+        
+        <div class="header">
+          <h2></h2>
+        </div>
+        
+        <div id="navbar">
+          <img src="Images\BL titre 2.png" alt="Logo titre Benjamin Lesgourgues" id="logotitre">
+          <a class="active" href="javascript:void(0)">Crédits</a>
+          <a href="javascript:void(0)">Portfolio</a>
+          <a href="javascript:void(0)">Accueil</a>
+        </div>
+        
+        <div class="content">
+          <div id="parag1"></div>
+          <br>
+          <h3>QUI SUIS-JE ?<hr> </h3>
+          <img src="Images\Benjamin.png" alt="Benjamin Lesgourgues" id="BLrond">
+          <p>Benjamin Lesgourgues, descendant de deux générations de professeurs et d’enseignants, dont l’idée d’en devenir un à son tour ne l’a pourtant jamais vraiment enthousiasmé, c’est moi !</p>
+          <br>
+          <p>Après quelques années passées sur les bancs de la licence d’anglais LLCE (littérature et histoire) à Mont-Saint-Aignan, j’ai rejoint la Normandie Web School en 2019 avec comme intention de me réorienter vers un domaine qui m’est bien plus séduisant : le numérique et les métiers du web.</p>
+          <br>
+          <p>Aujourd’hui apprenti en web design suivant une formation de chef de projet digital, je suis plus que jamais épanoui et prêt à m’investir, en liant passion et profession.
+          </p>
+          <br>
+          <br>
+          <br>
+          <h3>MON EXPERIENCE<hr id="barre2"> </h3>
+          <img src="Images\Bonhomme aipsid.png" alt="Les logiciels Adobe n'ont plus de secrets !" id="bonhommeaipsid">
+          <p class="paragdroite">Peu après le bac, j’ai commencé à gagner mes premiers salaires, en travaillant dans des supermarchés l’été, ou même à mi-temps durant l’année scolaire, et ce depuis 2017. Je ne suis donc pas étranger au monde du travail et bien qu’étant éloignés de mes études, ces premiers emplois m’ont permis de prendre un début d’indépendance financière et immobilière.</p>
+          <br>
+          <p class="paragdroite">A la Normandie Web School, nous avons eu l’opportunité, dans le cadre de projets d’étude, de créer des pages web en HTML, voire des sites plus complets via WordPress. Ces projets constituent des expériences enrichissantes et nous permettent de développer nos compétences en pratiquanthttp://benjaminl.normandiedigitalschool.fr/portfolio/ directement.</p>
+          <br>
+          <p class="paragdroite">Outre l’apprentissage des rudiments du HTML/CSS et de l’utilisation de WordPress, j’ai aussi acquis de bonnes bases dans divers logiciels de la suite adobe, comme Photoshop, Illustrator, Indesign…
+          <br>
+          <br>
+           </p>
+
+        </div>
+
+        <footer>
+          <br>
+          <p id="footertext">ici c'est le footer</p>
+        </footer>
+          
+        
+        
+        <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+        
+        
+
+
 </body>
 </html>
