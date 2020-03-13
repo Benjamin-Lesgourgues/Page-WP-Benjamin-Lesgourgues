@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="Images\BL Rond 2.png">
+</head>
+<body>
+    <div class="header">
+        <h2></h2>
+      </div>
+
+    <div id="navbar">
+        <img src="Images\BL titre 2.png" alt="Logo titre Benjamin Lesgourgues" id="logotitre">
+        <a href="credits.html">Crédits</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="index.html">Accueil</a>
+      </div>
+
+      <div class="content">
+        <br>
+        <h3>CREATION DE LOGO<hr id="hrarticle2"> </h3>
+        <br>
+    </div>
+
+        <div class="wrapper">
+            <div class="divarticle1">
+            <p class="particle">
+            <b>Créations réalisées avec la suite Adobe</b>
+            <br>
+            <br>
+            <strong>L</strong>a création de logo, d’illustrations et autres graphismes, est chose courante pour les designers,  notamment via la suite Adobe, en voici un exemple :
+            <br>
+            <br>
+            Avec Illustrator, vectoriser une lettre peut permettre de la fusionner avec toute autre sorte de forme, pour donner, par exemple, un logo.
+            <br>
+            <br>
+            Puis, via InDesign, on peut ensuite gérer le placement de ce logo dans une mise en page, ou ajouter d’autres effets, comme l’incrustation d’une image de fond dans le logo…
+            <br>
+            <br>
+            Merci à Sarah Kügel pour nous avoir initiés à l’utilisation de ces logiciels si pratiques pour les designers en herbe comme pour les plus expérimentés…
+
+            </p>
+            </div>
+            <div class="divarticle2">
+            <img src="http://benjaminl.normandiedigitalschool.fr/wp-content/uploads/2020/02/Composition-logo-729x1030.png" alt="Affiche Indesign" id="affichedesign">
+            </div>
+
+            <div class="divarticle3">
+            <img src="http://benjaminl.normandiedigitalschool.fr/wp-content/uploads/2020/02/Logo-Hibou-W-212x300.png" alt="Affiche Tronçomania" id="affichetronco">
+            <hr class="separateur">
+            </div>
+        </div>
+    <br>
+    <br>
+    
+
+    <div class="wrapper">
+        <div class="one">
+            <img src="Images\Composition_logo.png" alt="Création de logo" id="creationlogo">
+        </div>
+        <div class="two">
+            <img src="Images\Dessin-site.png" alt="Le dessin, une passion" id="dessinsite">
+        </div>
+        <div class="three">
+            <img src="http://benjaminl.normandiedigitalschool.fr/wp-content/uploads/2020/02/image-et-retouche-1-1030x639.png" alt="Retouche d'images" id="retouche">
+        </div>
+        <div class="four">
+            <img src="http://benjaminl.normandiedigitalschool.fr/wp-content/uploads/2020/02/Affiche1-212x300.png" alt="Affiche Tronçomania" id="affichetronco">
+        </div>
+      </div>
+
+
+      <footer>
+        <br>
+        <div class="wrapper">
+      
+          <div class="casefooter1">
+            <b>Me contacter</b>
+            <br>
+            <br>
+            06 51 23 44 97
+            <br>
+            <br>
+            benjamin.lesgourgues@gmail.com
+          </div>
+      
+          <div class="casefooter2">
+            <b>Pages</b>
+            <br>
+            <br>
+            <a href="index.html" class="lienfooter">Benjamin Lesgourgues</a>
+            <br>
+            <br>
+            <a href="credits.html" class="lienfooter">Crédits</a>
+            <br>
+            <br>
+            <a href="Images\Benjamin Lesgourgues CV.png" class="lienfooter" target="_blank">Mon CV</a>
+            <br>
+            <br>
+            <a href="portfolio.html" class="lienfooter">Portfolio</a>
+          </div>
+      
+          <div class="casefooter3">
+            <b>Réseaux Sociaux</b> 
+            <br>
+            <br>
+            <a href="https://www.facebook.com/BenjaminLesgourgues/" target="_blank"><img src="Images\facebook blanc.png" alt="Ma page Facebook" class="logorezosocio"></a>
+            <a href="https://www.linkedin.com/in/benjamin-lesgourgues/" target="_blank"><img src="Images\linkedin logo retouché blanc.png" alt="Mon profil Linkedin" class="logorezosocio"></a>
+          </div>
+      
+          <div class="casefooter4">
+            <b>Articles récents</b>
+            <br>
+            <br>
+            <a href="article_creationaffiche.html" class="lienfooter">Création d’une affiche</a>
+            <br>
+            <br>
+            <a href="article_creationlogo.html" class="lienfooter">Création de logo Indesign</a>
+            <br>
+            <br>
+            <a href="article_passiondessin.html" class="lienfooter">Le dessin, une passion</a>
+            <br>
+            <br>
+            <a href="article_retoucheimage.html" class="lienfooter">Retouche d’images</a>
+      
+          </div>
+        </div>
+       </footer>
+        
+
+
+      <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+
+</body>
+</html>
