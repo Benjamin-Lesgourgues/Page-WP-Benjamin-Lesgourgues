@@ -17,6 +17,18 @@ body {
     background-size: cover;
 }
 
+.bodyarticle{
+  margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    background-color:white;
+    background-image: url(http://benjaminl.normandiedigitalschool.fr/wp-content/uploads/2020/02/Exemple-fond3-e1583160143664.png);
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-size: cover;
+
+}
+
 
 /* Espace Titre */
 
@@ -25,6 +37,7 @@ body {
   width: auto;
   float: left;
 }
+
 
 /* Barre menu*/
 
@@ -56,7 +69,7 @@ body {
   }
   
   #navbar a.active {
-    background-color:#1d1b35;
+    background-color:#221e4e;
     color: white;
   }
   
@@ -92,6 +105,10 @@ p{
   font-size: 17px;
     inline-size: 750px;
     font-family: 'Questrial', sans-serif;
+}
+
+.particle{
+  inline-size: 500px;
 }
 
 h3{
@@ -164,6 +181,38 @@ hr {
   width: 77%;
   margin-top:15px;
 
+}
+
+#hrarticle1{
+  float:right;
+    margin-top:15px;
+    width: 50%;
+    height: 1px;
+    background-color:#821a26
+}
+
+#hrarticle2{
+  float:right;
+    margin-top:15px;
+    width: 75%;
+    height: 1px;
+    background-color:#821a26
+}
+
+#hrarticle3{
+  float:right;
+    margin-top:15px;
+    width: 70%;
+    height: 1px;
+    background-color:#821a26
+}
+
+.separateur{
+  float:right;
+  margin-top:15px;
+  width: 95%;
+  height: 1px;
+  background-color:#821a26
 }
 
 /* Grille Portfolio */
@@ -251,14 +300,90 @@ hr {
   margin-top:10px;
   vertical-align: middle;
 }
+
+#affichedesign{
+  width:500px;
+  height:auto;
+}
 /* Footer */
 
 footer{
   color: white;
   background-color:#262533 ;
-  height: 200px;
+  height: max-content;
 }
 
 #footertext{
   padding: 20px;
+}
+
+.lienfooter{
+  color: white;
+  text-decoration-line: none;
+}
+
+.casefooter1{
+  grid-column: 1 / 1;
+  grid-row: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.casefooter1 a:hover {
+  color: #e7253b;
+}
+
+.casefooter2{
+  grid-column: 2 / 2;
+  grid-row: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.casefooter2 a:hover {
+  color: #e7253b;
+}
+
+.casefooter3{
+  grid-column: 3 / 3;
+  grid-row: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.casefooter4{
+  grid-column: 4 / 4;
+  grid-row: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.casefooter4 a:hover {
+  color: #e7253b;
+}
+
+.logorezosocio{
+  height:30px;
+
+}
+
+/* ---------------------------------------- ARTICLES ----------------------------------------*/
+
+.divarticle1{
+  grid-column:1/1;
+  grid-row:1/2;
+  padding:20px;
+}
+
+.divarticle2{
+  grid-column:2/2;
+  grid-row:1/4;
+  padding:20px;
+  text-align: center;
+}
+
+.divarticle3{
+  grid-column:1/1;
+  grid-row:2;
+  text-align: center;
 }
