@@ -9,7 +9,8 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
     color:black;
     background-color:white;
     background-image: url(http://benjaminl.normandiedigitalschool.fr/wp-content/uploads/2020/02/Exemple-fond3-e1583160143664.png);
@@ -20,7 +21,8 @@ body {
 
 .bodyarticle{
   margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
     color:black;
     background-color:white;
     background-image: url(http://benjaminl.normandiedigitalschool.fr/wp-content/uploads/2020/02/Exemple-fond3-e1583160143664.png);
@@ -35,7 +37,7 @@ body {
 
 #logotitre{
   height: 80px;
-  width: auto;
+  width: minmax(100px, auto);
   float: left;
 }
 
@@ -94,7 +96,7 @@ body {
 
 .grid{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(940px);
   grid-template-rows: repeat(3, max-content);
   text-align: center;
   padding:20px;
@@ -123,12 +125,60 @@ body {
 }
 
 .parag5{
+  text-align: center;
   grid-column: 1 / 1;
   grid-row: 5;
 }
 
+.paragspecial{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.paragspecial2{
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.paragspecial3{
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.paragspecial4{
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.paragspecial5{
+  grid-column: 1;
+  grid-row: 7;
+}
+
+.paragspecial6{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.paragspecial7{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.paragspecial8{
+  grid-column: 1;
+  grid-row: 4 ;
+}
+
+.paragspecialarticle1{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+
 .minigrid{
   display: grid;
+  text-align: center;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(4, minmax(300px));
 }
@@ -185,6 +235,7 @@ h3{
 h4{
   font-size: 20px;
   margin-top:10px;
+  text-transform: uppercase;
 
 }
 
@@ -195,6 +246,10 @@ strong{
 strong a{
   color: #821a26;
   text-decoration-line: none;
+}
+
+strong a:hover{
+  color: #c4293b;
 }
 
 .lienspecial{
@@ -219,6 +274,7 @@ hr{
     background-color: #ffffff;
     height: 1px;
     margin: 10px;
+    margin-top: 25px;
  
 }
 
@@ -309,9 +365,16 @@ hr{
   padding: 10px;
 }
 
+#affichetronco2{
+  width:250px;
+  height:auto;
+  padding: 10px;
+}
+
 #affichedesign{
   width:500px;
   height:auto;
+  margin-bottom: 30px;
 }
 /* Footer */
 
@@ -360,3 +423,136 @@ footer a:hover {
   text-align: center;
 }
 
+/* ---------------------------------------- MEDIA QUERY ----------------------------------------*/
+
+@media screen and (min-width: 940px){
+
+  /*Grille de contenu principal*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    text-align: center;
+    padding:20px;
+  }
+  
+  .parag1{
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 50px;
+  }
+  
+  .parag2{
+    grid-column: 1 / 1;
+    grid-row: 1;
+    margin-bottom: 50px;
+  }
+  
+  .parag3{
+    grid-column: 1 / 1;
+    grid-row: 4;
+  }
+  
+  .parag4{
+    grid-column: 2;
+    grid-row: 4;
+  }
+  
+  .parag5{
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  .parag6{
+    grid-column: 1 / 1;
+    grid-row: 1;
+    text-align: left;
+  }
+
+  .paragspecial{
+    grid-column: 2;
+    grid-row: 1 / 4;
+  }
+
+  .paragspecial2{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .paragspecial3{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 350px;
+  }
+
+  .paragspecial4{
+    grid-column: 2;
+    grid-row: 1 ;
+  }
+
+  .paragspecial5{
+    grid-column: 1/3;
+    grid-row: 2 ;
+  }
+
+  .paragspecial6{
+    grid-column: 2;
+    grid-row: 1 ;
+  }
+
+  .paragspecial7{
+    grid-column: 1;
+    grid-row: 2 ;
+  }
+
+  .paragspecial8{
+    grid-column: 2;
+    grid-row: 2 ;
+  }
+
+
+
+ /*Grille de présentation portfolio */
+
+ .hrblanc{
+   height:0px;
+ }
+
+ .minigrid{
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, minmax(300px));
+ }
+
+ .miniboite1{
+  grid-column: 1;
+  grid-row: 1;
+
+ }
+
+ .miniboite2{
+  grid-column: 2;
+  grid-row: 1;
+  
+ }
+
+ .miniboite3{
+  grid-column: 3;
+  grid-row: 1;
+ 
+ }
+
+ .miniboite4{
+  grid-column: 4;
+  grid-row: 1;
+  }
+
+  #BLrond{
+    height: 300px;
+    width: auto;
+    padding:10px;
+  }
+
+}
